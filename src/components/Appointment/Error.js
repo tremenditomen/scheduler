@@ -1,7 +1,7 @@
 import React from "react";
 import "components/Appointment/styles.scss";
 export default function Error(props) {
-    console.log(props.message)
+  console.log(props.message);
   return (
     <main className="appointment__card appointment__card--error">
       <section className="appointment__error-message">
@@ -9,8 +9,7 @@ export default function Error(props) {
         <h3 className="text--light">{props.message}</h3>
       </section>
       <img
-      onClick = {props.onClose}
-
+        onClick={props.onClose}
         className="appointment__error-close"
         src="images/close.png"
         alt="Close"
